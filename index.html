@@ -147,6 +147,9 @@ section.sec{display:grid;grid-template-columns:9rem minmax(0,1fr);gap:2rem;paddi
 .principles span{color:var(--muted);font-size:.96rem}
 
 .contact{padding-block:clamp(3rem,8vw,6rem)}
+.chead{display:grid;gap:0 3rem;align-items:end}
+.headshot{width:clamp(9rem,22vw,18rem);height:auto;aspect-ratio:1;object-fit:cover;margin:0 0 2rem;border:1px solid var(--rule)}
+@media (min-width:900px){.chead{grid-template-columns:1fr auto}}
 .contact h2{font:400 clamp(2rem,5vw,3.6rem)/1.08 var(--serif);letter-spacing:-.02em;margin:0 0 2rem;max-width:18ch;text-wrap:balance}
 .cgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;border-top:2px solid var(--ink);padding-top:1.2rem}
 .cgrid div{min-width:0}
@@ -327,8 +330,10 @@ footer{padding-block:2rem 3rem;border-top:1px solid var(--rule);font:500 .72rem/
   </section>
 
   <section class="contact" id="contact" aria-labelledby="h-contact">
+    <div class="chead"><div>
     <p class="eyebrow">Contact</p>
     <h2 id="h-contact">Building or funding healthcare AI? I would like to hear from you.</h2>
+    </div><img class="headshot" src="headshot.jpg" alt="Ryan Leonard Pei" width="720" height="720" loading="lazy" decoding="async"></div>
     <div class="cgrid">
       <div><span class="eyebrow">Email</span><div class="v" id="em">rlp@alumni.stanford.edu</div><button class="copy" type="button" data-copy="rlp@alumni.stanford.edu">Copy</button></div>
       <div><span class="eyebrow">LinkedIn</span><div class="v"><a href="https://www.linkedin.com/in/rlpei" target="_blank" rel="noopener">linkedin.com/in/rlpei</a></div></div>
